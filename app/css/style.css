@@ -1,0 +1,86 @@
+/* CSS for the whole page */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+/* CSS for hero class */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), #3551b5), url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS Properties */
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+/* CSS properties for input-group class */
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* CSS properties for input and text-area */
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+/*CSS properties for labels */
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+/* CSS properties for button */
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Label to dissapear when entering text */
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+/* CSS properties bulking name and phone number on same row */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CSS properties reducing the input group from 100% */
+.row .input-group{
+    flex-basis: 48%;
+}

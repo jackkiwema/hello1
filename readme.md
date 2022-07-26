@@ -1,3 +1,3 @@
 Hi, 
 
-Welcome to [contact](https://https://jackkiwema.com/contact) page
+Welcome to [contact](https://jackkiwema.com/contact/) page
